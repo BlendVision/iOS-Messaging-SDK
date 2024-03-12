@@ -19,7 +19,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "BlendVisionMessagingSDK",
-            url: "https://drive.google.com/file/d/1YpHjKF5aeuAfCt2DhAN1ew9TYyURak-h/view?usp=drive_link",
+            url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
             checksum: "8cb8fe997944c73d016afb0d98e893fec90f3283853eeff39c051ccf160bda47"
         ),
         .binaryTarget(
