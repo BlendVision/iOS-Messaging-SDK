@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "BlendVisionMessagingSDK",
+    name: "BVMessagingSDK",
     platforms: [
             .iOS(.v14)
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "BlendVisionMessagingSDK",
-            targets: ["BlendVisionMessagingSDK"]),
+            name: "BVMessagingSDK",
+            targets: ["BVMessagingSDK", "Alamofire", "CocoaMQTT", "Starscream"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -34,7 +34,7 @@ let package = Package(
             path: "Sources/Frameworks/Starscream.xcframework"
         ),
         .binaryTarget(
-            name: "BlendVisionMessagingSDK",
+            name: "BVMessagingSDK",
             url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
             checksum: "a8aba4cb6210a629384276296e70919d51710fc44d160bd263bde6fa4ad2a6e2"
         )
