@@ -17,10 +17,10 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "BlendVisionMessagingSDK"),
-        .testTarget(
-            name: "BlendVisionMessagingSDKTests",
-            dependencies: ["BlendVisionMessagingSDK"]),
+        .binaryTarget(
+            name: "BlendVisionMessagingSDK",
+            url: "https://drive.google.com/file/d/1YpHjKF5aeuAfCt2DhAN1ew9TYyURak-h/view?usp=drive_link",
+            checksum: "8cb8fe997944c73d016afb0d98e893fec90f3283853eeff39c051ccf160bda47"
+        )
     ]
 )
