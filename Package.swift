@@ -36,7 +36,7 @@ let package = Package(
         .binaryTarget(
             name: "BlendVisionMessagingSDK",
             url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
-            checksum: "8cb8fe997944c73d016afb0d98e893fec90f3283853eeff39c051ccf160bda47"
+            checksum: "aa7bdd22032aa5e6c20f84ea52bbcf8a6777f283cb7bac754cf19f599cf6af82"
         )
     ]
 )
