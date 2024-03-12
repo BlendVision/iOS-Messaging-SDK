@@ -1,0 +1,343 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BVMessagingSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BVMessagingSDK
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public enum LoggerLevel : Swift.Int {
+  case debug
+  case info
+  case warning
+  case error
+  case off
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageBlock : BVMessagingSDK.InteractionMessage {
+  final public let blockUser: BVMessagingSDK.BlockedUser
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public enum InteractionType : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case text
+  case mute
+  case unmute
+  case pinMessage
+  case unpinMessage
+  case blockUser
+  case unblockUser
+  case deleteMessage
+  case viewerInfoEnabled
+  case viewerInfoDisabled
+  case viewerInfoUpdate
+  case custom
+  case entrance
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [BVMessagingSDK.InteractionType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [BVMessagingSDK.InteractionType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageDeleteMessage : BVMessagingSDK.InteractionMessage {
+  final public let deleteMessage: BVMessagingSDK.DeleteTextMessage
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct DeleteTextMessage : Swift.Codable {
+  public let id: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func mute() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func unmute() async throws
+  #endif
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageText : BVMessagingSDK.InteractionMessage {
+  final public let textMessage: BVMessagingSDK.TextMessage?
+  public init(id: Swift.String, user: BVMessagingSDK.ChatroomUser, text: Swift.String, sentAt: Foundation.Date)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct TextMessage : Swift.Codable {
+  public let text: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public protocol ChatroomEventListener : AnyObject {
+  func chatroomDidConnect(_ chatroom: BVMessagingSDK.Chatroom)
+  func chatroomDidDisconnect(_ chatroom: BVMessagingSDK.Chatroom)
+  func chatroom(_ chatroom: BVMessagingSDK.Chatroom, failToConnect error: any Swift.Error)
+  func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didDisconnectWithError error: any Swift.Error)
+  func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didReceiveMessages messages: [BVMessagingSDK.InteractionMessage])
+  func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didChangeState state: BVMessagingSDK.ConnectingState)
+}
+@_hasMissingDesignatedInitializers public class Chatroom {
+  final public let identifier: Swift.String
+  public var user: BVMessagingSDK.ChatroomUser {
+    get
+  }
+  public var info: BVMessagingSDK.ChatroomInfo {
+    get
+  }
+  public var messages: [BVMessagingSDK.InteractionMessage] {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageEntrance : BVMessagingSDK.InteractionMessage {
+  final public let entranceMessage: BVMessagingSDK.ChatroomUser
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct MessagingConfig {
+  public let apiKey: Swift.String
+  public let organizationID: Swift.String
+  public init(apiKey: Swift.String, organizationID: Swift.String, logLevel: BVMessagingSDK.LoggerLevel)
+}
+public enum MessagingError : Swift.Error {
+  case configMissing
+  public static func == (a: BVMessagingSDK.MessagingError, b: BVMessagingSDK.MessagingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MessagingManager {
+  public static let shared: BVMessagingSDK.MessagingManager
+  public func setup(with config: BVMessagingSDK.MessagingConfig)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createChatroom(with user: BVMessagingSDK.ChatroomUser) async throws -> BVMessagingSDK.Chatroom
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func chatroom(id identifier: Swift.String, with user: BVMessagingSDK.ChatroomUser?) async throws -> BVMessagingSDK.Chatroom
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageViewerInfo : BVMessagingSDK.InteractionMessage {
+  final public let viewerInfo: BVMessagingSDK.ViewerInfo?
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct ViewerInfo : Swift.Codable {
+  public var enabled: Swift.Bool {
+    get
+  }
+  public let count: Swift.Int
+  public let versionNumber: Swift.String
+  public let updatedAt: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class InteractionMessageMute : BVMessagingSDK.InteractionMessage {
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+public enum ChatroomAction : Swift.String {
+  case active
+  case inactive
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func info() async throws -> BVMessagingSDK.ChatroomInfo
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func changeStatus(to action: BVMessagingSDK.ChatroomAction) async throws
+  #endif
+}
+extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func updateViewerInfo(enabled: Swift.Bool) async throws
+  #endif
+}
+extension BVMessagingSDK.Chatroom {
+  public func add(listener: any BVMessagingSDK.ChatroomEventListener)
+  public func remove(listener: any BVMessagingSDK.ChatroomEventListener)
+}
+extension BVMessagingSDK.Chatroom {
+  public func sendMessage(text: Swift.String) throws -> BVMessagingSDK.InteractionMessageText
+  public func sendCustomMessage(text: Swift.String) throws
+  #if compiler(>=5.3) && $AsyncAwait
+  public func pinMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func unpinMessage(id messageID: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deleteMessage(id messageID: Swift.String) async throws
+  #endif
+}
+public struct ChatroomUser : Swift.Codable {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let deviceID: Swift.String
+  public let isAdmin: Swift.Bool
+  public let isBlocked: Swift.Bool?
+  public var role: BVMessagingSDK.ChatroomUser.Role {
+    get
+  }
+  public init(id: Swift.String, name: Swift.String, deviceID: Swift.String, isAdmin: Swift.Bool, isBlocked: Swift.Bool? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public enum Role : Swift.String {
+    case viewer
+    case admin
+    case guest
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum ConnectingState : Swift.Int {
+  case disconnected
+  case connecting
+  case connected
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func blockUser(id userID: Swift.String, deviceID: Swift.String, username: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func unblockUser(id userID: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func updateUser(name: Swift.String) async throws
+  #endif
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageCustom : BVMessagingSDK.InteractionMessage {
+  final public let customMessage: BVMessagingSDK.CustomMessage
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct CustomMessage : Swift.Codable {
+  public let value: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class InteractionMessagePin : BVMessagingSDK.InteractionMessage {
+  final public let pinUnpinMessage: BVMessagingSDK.PinUnpinMessage
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct PinUnpinMessage : Swift.Codable {
+  public let message: BVMessagingSDK.PinMessage
+  public let actionTaker: BVMessagingSDK.ChatroomUser
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PinMessage : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String
+  public let text: Swift.String
+  public let sender: BVMessagingSDK.MessageSender
+  public static func == (lhs: BVMessagingSDK.PinMessage, rhs: BVMessagingSDK.PinMessage) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MessageSender : Swift.Codable {
+  public let id: Swift.String, deviceID: Swift.String, customName: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ChatroomError : Swift.Error {
+  case undefinedError(reason: Swift.String)
+  case internalError(reason: Swift.String)
+  case serverError(code: Swift.Int, reason: Swift.String)
+  case unauthorized
+  case noInternet
+}
+extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func connect() async throws
+  #endif
+  public func disconnect()
+}
+public struct ChatroomInfo : Swift.Codable {
+  public let identifier: Swift.String
+  public var muted: Swift.Bool {
+    get
+  }
+  public let status: Swift.String
+  public var blockedUsers: [BVMessagingSDK.BlockedUser] {
+    get
+  }
+  public var pinnedMessages: [BVMessagingSDK.PinUnpinMessage] {
+    get
+  }
+  public var viewerInfo: BVMessagingSDK.ViewerInfo {
+    get
+  }
+  public let createdAt: Swift.String, updatedAt: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BlockedUser : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String, deviceID: Swift.String, customName: Swift.String
+  public let blocked: Swift.Bool
+  public let actionTaker: BVMessagingSDK.ChatroomUser
+  public static func == (lhs: BVMessagingSDK.BlockedUser, rhs: BVMessagingSDK.BlockedUser) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class InteractionMessage : Swift.Codable {
+  final public let id: Swift.String
+  final public let user: BVMessagingSDK.ChatroomUser
+  final public let type: BVMessagingSDK.InteractionType
+  final public let sentAt: Foundation.Date?
+  final public let receivedAt: Foundation.Date?
+  final public let publishedAt: Foundation.Date?
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+extension BVMessagingSDK.LoggerLevel : Swift.Equatable {}
+extension BVMessagingSDK.LoggerLevel : Swift.Hashable {}
+extension BVMessagingSDK.LoggerLevel : Swift.RawRepresentable {}
+extension BVMessagingSDK.InteractionType : Swift.Equatable {}
+extension BVMessagingSDK.InteractionType : Swift.Hashable {}
+extension BVMessagingSDK.InteractionType : Swift.RawRepresentable {}
+extension BVMessagingSDK.MessagingError : Swift.Equatable {}
+extension BVMessagingSDK.MessagingError : Swift.Hashable {}
+extension BVMessagingSDK.ChatroomAction : Swift.Equatable {}
+extension BVMessagingSDK.ChatroomAction : Swift.Hashable {}
+extension BVMessagingSDK.ChatroomAction : Swift.RawRepresentable {}
+extension BVMessagingSDK.ChatroomUser.Role : Swift.Equatable {}
+extension BVMessagingSDK.ChatroomUser.Role : Swift.Hashable {}
+extension BVMessagingSDK.ChatroomUser.Role : Swift.RawRepresentable {}
+extension BVMessagingSDK.ConnectingState : Swift.Equatable {}
+extension BVMessagingSDK.ConnectingState : Swift.Hashable {}
+extension BVMessagingSDK.ConnectingState : Swift.RawRepresentable {}

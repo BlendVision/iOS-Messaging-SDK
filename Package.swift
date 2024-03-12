@@ -35,8 +35,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "BVMessagingSDK",
-            url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
-            checksum: "a8aba4cb6210a629384276296e70919d51710fc44d160bd263bde6fa4ad2a6e2"
+            path: "Sources/Frameworks/BVMessagingSDK.xcframework"
         )
     ]
 )
