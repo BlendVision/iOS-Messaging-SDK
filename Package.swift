@@ -17,10 +17,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(
-            name: "BlendVisionMessagingSDK",
-            url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
-            checksum: "8cb8fe997944c73d016afb0d98e893fec90f3283853eeff39c051ccf160bda47"
+        .target(
+            name: "BlendVisionMessagingSDK"
         ),
         .binaryTarget(
             name: "Alamofire",
@@ -37,6 +35,14 @@ let package = Package(
         .binaryTarget(
             name: "Starscream",
             path: "Sources/Frameworks/Starscream.xcframework"
-        )
+        ),
+        .binaryTarget(
+            name: "BVMessagingSDK",
+            url: "https://github.com/bing-kuo/MessagingSDKDemo/releases/download/0.0.1/BVMessagingSDK.xcframework.zip",
+            checksum: "8cb8fe997944c73d016afb0d98e893fec90f3283853eeff39c051ccf160bda47"
+        ),
+        .testTarget(
+            name: "BlendVisionMessagingSDKTests",
+            dependencies: ["BlendVisionMessagingSDK"]),
     ]
 )
