@@ -25,6 +25,12 @@ The BlendVision Chatroom iOS library written in Swift.
     - Support muting and unmuting within chatrooms.
     - Support updating the admin's name.
 
+## Dependencies
+- [CocoaMQTT](https://github.com/emqx/CocoaMQTT)
+- [MqttCocoaAsyncSocket](https://github.com/leeway1208/MqttCocoaAsyncSocket)
+- [Starscream](https://github.com/daltoniam/Starscream)
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+
 ## Installation
 ### Swift Package Manager
 - File > Swift Packages > Add Package Dependency
