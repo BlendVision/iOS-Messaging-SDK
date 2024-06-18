@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CocoaMQTT-Swift.h</key>
 		<data>
-		4KI8EHNoJ3SBTFf50qPs17eDrWE=
+		BpESdMrk/tmQnf6ZandbIMyQoug=
 		</data>
 		<key>Headers/CocoaMQTT.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lbVVsG6TQzJKVvf80jCujwTxLa8=
+		RayuKg7NfB4/r6M3HZh6oTUseEQ=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0MCZa4B/Q/LO68Mum9W0SDxVT9U=
+		EHPZqdYyMLD81O8I1VeAzTiWx5Q=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ndTsUXJoKkM0ajDsuI7cX3Csf4w=
+		T3j8bylu6kQP8rVFzKP+LcaCY5o=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UWl18Vl6qYx58uTo5INyVfj3Ptw=
+		0hA91BGMxNHkyG5DYocMY4xGAB8=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		E8lSIx2RcBmK9w42XeS/NkQ3gzs=
+		gWFTcr5pTBcTGl3kAOpcs6qMePo=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2Ais2Iiy2SUJHigSXImD+CrILHc=
+		1DQIPOd0Vr87aWfTOy8UEjTb8lY=
 		</data>
 		<key>Modules/CocoaMQTT.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1kGSj+f6UrFWDuwjKKSb/G7wl8U=
+		v034qnLe+Y9BnMxG6BV7JuRMzo8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ij1bkUotlPqDpsF4ph3OWegeFSQZIAofWUidjBtk+FU=
+			lnyRLdyE9U3DPc5s3WTVn05K3x0rHlUHpNAT2O5yAxg=
 			</data>
 		</dict>
 		<key>Headers/CocoaMQTT.h</key>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P4ti2MG2he7ic+jVRHYbtXCwi1VZbWoUkrNewAFcVk8=
+			4rl76Qe2PKJtucPBJCOGP/xsWZyqWaLfJKiQVCSLmq4=
 			</data>
 		</dict>
 		<key>Modules/CocoaMQTT.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aqvwGSwgx+R9gH3nkBJdq8E1DK7uxzxNsRxvz1rABas=
+			14XIkTbdL8IgyK7jgklxAo8KfT96i4rshS4bZBqwEuo=
 			</data>
 		</dict>
 		<key>Modules/CocoaMQTT.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z2iFNwMWGfwJXije03UvO1zl78KHw9a3tSyxXVHc29A=
+			149B4ZxUmNbABNAOkGRB6NOjL3HWrk6S7qcfxmknIoM=
 			</data>
 		</dict>
 		<key>Modules/CocoaMQTT.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7hqplHyXetnIpcmcbX9RGjErQu4WTQnsnYnzdzIYm9c=
+			5b1PR2pnqKz4U0ZkfO3xhreCNq1R7Xtk++sWALfjI48=
 			</data>
 		</dict>
 		<key>Modules/CocoaMQTT.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			te7lDqQUbcIezf0nz9wAMxrH/Mb9nHGK8PpEBgXenIU=
+			9Dr+rZDYrhwt/LB0TE5ieqsZoQVOaJi9QADLcKl9ZSM=
 			</data>
 		</dict>
 		<key>Modules/CocoaMQTT.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TSxpr9EIGmS0Qba/P+FOSX2OFXnmXMBpmUxsxXeOTZ8=
+			a1SjnC3lQuThsOyGSEO86tYY+tSR9q1Nxx7NFhJKaXs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

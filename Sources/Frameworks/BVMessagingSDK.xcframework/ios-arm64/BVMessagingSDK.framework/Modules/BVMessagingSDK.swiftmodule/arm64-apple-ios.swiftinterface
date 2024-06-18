@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BVMessagingSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BVMessagingSDK
 @_exported import BVMessagingSDK
 import Foundation
 import Swift
@@ -10,6 +9,10 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+extension BVMessagingSDK.Chatroom {
+  public func sendCustomMessage(text: Swift.String) throws
+  public func sendCountableCustomMessage(key: Swift.String, text: Swift.String = "") throws
+}
 public enum LoggerLevel : Swift.Int {
   case debug
   case info
@@ -41,6 +44,7 @@ public enum InteractionType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case viewerInfoDisabled
   case viewerInfoUpdate
   case custom
+  case customCounterUpdate
   case entrance
   public init?(rawValue: Swift.String)
   public typealias AllCases = [BVMessagingSDK.InteractionType]
@@ -91,9 +95,9 @@ public protocol ChatroomEventListener : AnyObject {
   func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didReceiveMessages messages: [BVMessagingSDK.InteractionMessage])
   func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didFailToReceiveMessagesWithError error: any Swift.Error)
   func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didChangeState state: BVMessagingSDK.ConnectingState)
+  func chatroom(_ chatroom: BVMessagingSDK.Chatroom, didFinishBatchWithIncreaseCount increment: [Swift.String : Swift.Int], totalCount: [Swift.String : Swift.Int])
 }
 @_hasMissingDesignatedInitializers public class Chatroom {
-  final public let identifier: Swift.String
   public var user: BVMessagingSDK.ChatroomUser {
     get
   }
@@ -115,9 +119,7 @@ public protocol ChatroomEventListener : AnyObject {
   @objc deinit
 }
 public struct MessagingConfig {
-  public let apiKey: Swift.String
-  public let organizationID: Swift.String
-  public init(apiKey: Swift.String, organizationID: Swift.String, logLevel: BVMessagingSDK.LoggerLevel)
+  public init(logLevel: BVMessagingSDK.LoggerLevel, batchProcessingInterval: Foundation.TimeInterval = 2, batchSendInterval: Foundation.TimeInterval = 5)
 }
 public enum MessagingError : Swift.Error {
   case configMissing
@@ -131,10 +133,7 @@ public enum MessagingError : Swift.Error {
   public static let shared: BVMessagingSDK.MessagingManager
   public func setup(with config: BVMessagingSDK.MessagingConfig)
   #if compiler(>=5.3) && $AsyncAwait
-  public func createChatroom(with user: BVMessagingSDK.ChatroomUser) async throws -> BVMessagingSDK.Chatroom
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func chatroom(id identifier: Swift.String, with user: BVMessagingSDK.ChatroomUser?) async throws -> BVMessagingSDK.Chatroom
+  public func chatroom(with token: Swift.String, refreshToken: Swift.String?) async throws -> BVMessagingSDK.Chatroom
   #endif
   @objc deinit
 }
@@ -176,9 +175,20 @@ extension BVMessagingSDK.Chatroom {
   #if compiler(>=5.3) && $AsyncAwait
   public func info() async throws -> BVMessagingSDK.ChatroomInfo
   #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func changeStatus(to action: BVMessagingSDK.ChatroomAction) async throws
-  #endif
+}
+@_hasMissingDesignatedInitializers public class InteractionMessageCustomCounterUpdate : BVMessagingSDK.InteractionMessage {
+  final public let customCounter: BVMessagingSDK.CustomCounter
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct CustomCounter : Swift.Codable {
+  public let key: Swift.String
+  public let value: Swift.Int
+  public let versionNumber: Swift.String
+  public let updatedAt: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension BVMessagingSDK.Chatroom {
   #if compiler(>=5.3) && $AsyncAwait
@@ -191,7 +201,6 @@ extension BVMessagingSDK.Chatroom {
 }
 extension BVMessagingSDK.Chatroom {
   public func sendMessage(text: Swift.String) throws -> BVMessagingSDK.InteractionMessageText
-  public func sendCustomMessage(text: Swift.String) throws
   #if compiler(>=5.3) && $AsyncAwait
   public func pinMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
   #endif
@@ -199,7 +208,11 @@ extension BVMessagingSDK.Chatroom {
   public func unpinMessage(id messageID: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(*, deprecated, message: "This will be removed in the next version; please migrate to deleteMessage(with:).")
   public func deleteMessage(id messageID: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deleteMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
   #endif
 }
 public struct ChatroomUser : Swift.Codable, Swift.Equatable {
@@ -219,14 +232,13 @@ public struct ChatroomUser : Swift.Codable, Swift.Equatable {
   public enum Role : Swift.String {
     case viewer
     case admin
-    case guest
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
-  public static func == (a: BVMessagingSDK.ChatroomUser, b: BVMessagingSDK.ChatroomUser) -> Swift.Bool
+  public static func == (lhs: BVMessagingSDK.ChatroomUser, rhs: BVMessagingSDK.ChatroomUser) -> Swift.Bool
 }
 public enum ConnectingState : Swift.Int {
   case disconnected
@@ -257,6 +269,13 @@ extension BVMessagingSDK.Chatroom {
 }
 public struct CustomMessage : Swift.Codable {
   public let value: Swift.String
+  public let increment: BVMessagingSDK.CustomMessageIncrement?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomMessageIncrement : Swift.Codable {
+  public let key: Swift.String
+  public let value: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -295,6 +314,8 @@ public enum ChatroomError : Swift.Error {
   case unauthorized
   case noInternet
   case tokenExpired
+  case customCounterKeyNotFound(key: Swift.String)
+  case refreshTokenNotFound
 }
 extension BVMessagingSDK.Chatroom {
   #if compiler(>=5.3) && $AsyncAwait
@@ -314,10 +335,14 @@ public struct ChatroomInfo : Swift.Codable {
   public var pinnedMessages: [BVMessagingSDK.PinUnpinMessage] {
     get
   }
+  public var customCounters: [BVMessagingSDK.CustomCounter] {
+    get
+  }
   public var viewerInfo: BVMessagingSDK.ViewerInfo {
     get
   }
   public let createdAt: Swift.String, updatedAt: Swift.String
+  public func getCustomCounter(key: Swift.String) -> Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
