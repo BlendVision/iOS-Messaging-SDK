@@ -1058,6 +1058,43 @@
             "moduleName": "BVMessagingSDK"
           },
           {
+            "kind": "Var",
+            "name": "broadcastUpdate",
+            "printedName": "broadcastUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BVMessagingSDK.InteractionType.Type) -> BVMessagingSDK.InteractionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InteractionType",
+                    "printedName": "BVMessagingSDK.InteractionType",
+                    "usr": "s:14BVMessagingSDK15InteractionTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BVMessagingSDK.InteractionType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InteractionType",
+                        "printedName": "BVMessagingSDK.InteractionType",
+                        "usr": "s:14BVMessagingSDK15InteractionTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14BVMessagingSDK15InteractionTypeO15broadcastUpdateyA2CmF",
+            "mangledName": "$s14BVMessagingSDK15InteractionTypeO15broadcastUpdateyA2CmF",
+            "moduleName": "BVMessagingSDK"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -2414,63 +2451,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "messages",
-            "printedName": "messages",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[BVMessagingSDK.InteractionMessage]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InteractionMessage",
-                    "printedName": "BVMessagingSDK.InteractionMessage",
-                    "usr": "s:14BVMessagingSDK18InteractionMessageC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14BVMessagingSDK8ChatroomC8messagesSayAA18InteractionMessageCGvp",
-            "mangledName": "$s14BVMessagingSDK8ChatroomC8messagesSayAA18InteractionMessageCGvp",
-            "moduleName": "BVMessagingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[BVMessagingSDK.InteractionMessage]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InteractionMessage",
-                        "printedName": "BVMessagingSDK.InteractionMessage",
-                        "usr": "s:14BVMessagingSDK18InteractionMessageC"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14BVMessagingSDK8ChatroomC8messagesSayAA18InteractionMessageCGvg",
-                "mangledName": "$s14BVMessagingSDK8ChatroomC8messagesSayAA18InteractionMessageCGvg",
-                "moduleName": "BVMessagingSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "reconnect",
             "printedName": "reconnect()",
@@ -2733,6 +2713,90 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMessage",
+            "printedName": "getMessage(beforeAt:afterAt:limit:fromOldest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BVMessagingSDK.InteractionMessage]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InteractionMessage",
+                    "printedName": "BVMessagingSDK.InteractionMessage",
+                    "usr": "s:14BVMessagingSDK18InteractionMessageC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldestSayAA011InteractionE0CG10Foundation4DateVSg_AOSiSgSbtYaKF",
+            "mangledName": "$s14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldestSayAA011InteractionE0CG10Foundation4DateVSg_AOSiSgSbtYaKF",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -4394,6 +4458,830 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "InteractionMessageBroadcastUpdate",
+        "printedName": "InteractionMessageBroadcastUpdate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "broadcastMessage",
+            "printedName": "broadcastMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastMessage",
+                "printedName": "BVMessagingSDK.BroadcastMessage",
+                "usr": "s:14BVMessagingSDK16BroadcastMessageV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC09broadcastD0AA0eD0Vvp",
+            "mangledName": "$s14BVMessagingSDK33InteractionMessageBroadcastUpdateC09broadcastD0AA0eD0Vvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BroadcastMessage",
+                    "printedName": "BVMessagingSDK.BroadcastMessage",
+                    "usr": "s:14BVMessagingSDK16BroadcastMessageV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC09broadcastD0AA0eD0Vvg",
+                "mangledName": "$s14BVMessagingSDK33InteractionMessageBroadcastUpdateC09broadcastD0AA0eD0Vvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InteractionMessageBroadcastUpdate",
+                "printedName": "BVMessagingSDK.InteractionMessageBroadcastUpdate",
+                "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14BVMessagingSDK33InteractionMessageBroadcastUpdateC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BVMessagingSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14BVMessagingSDK33InteractionMessageBroadcastUpdateC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BVMessagingSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14BVMessagingSDK33InteractionMessageBroadcastUpdateC",
+        "mangledName": "$s14BVMessagingSDK33InteractionMessageBroadcastUpdateC",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:14BVMessagingSDK18InteractionMessageC",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "BVMessagingSDK.InteractionMessage"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BroadcastMessage",
+        "printedName": "BroadcastMessage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewerMetrics",
+            "printedName": "viewerMetrics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastViewerMetrics",
+                "printedName": "BVMessagingSDK.BroadcastViewerMetrics",
+                "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK16BroadcastMessageV13viewerMetricsAA0c6ViewerF0Vvp",
+            "mangledName": "$s14BVMessagingSDK16BroadcastMessageV13viewerMetricsAA0c6ViewerF0Vvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BroadcastViewerMetrics",
+                    "printedName": "BVMessagingSDK.BroadcastViewerMetrics",
+                    "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK16BroadcastMessageV13viewerMetricsAA0c6ViewerF0Vvg",
+                "mangledName": "$s14BVMessagingSDK16BroadcastMessageV13viewerMetricsAA0c6ViewerF0Vvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastMessage",
+                "printedName": "BVMessagingSDK.BroadcastMessage",
+                "usr": "s:14BVMessagingSDK16BroadcastMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVMessagingSDK16BroadcastMessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14BVMessagingSDK16BroadcastMessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK16BroadcastMessageV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14BVMessagingSDK16BroadcastMessageV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14BVMessagingSDK16BroadcastMessageV",
+        "mangledName": "$s14BVMessagingSDK16BroadcastMessageV",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BroadcastViewerMetrics",
+        "printedName": "BroadcastViewerMetrics",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "concurrent",
+            "printedName": "concurrent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastConcurrent",
+                "printedName": "BVMessagingSDK.BroadcastConcurrent",
+                "usr": "s:14BVMessagingSDK19BroadcastConcurrentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV10concurrentAA0C10ConcurrentVvp",
+            "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV10concurrentAA0C10ConcurrentVvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BroadcastConcurrent",
+                    "printedName": "BVMessagingSDK.BroadcastConcurrent",
+                    "usr": "s:14BVMessagingSDK19BroadcastConcurrentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV10concurrentAA0C10ConcurrentVvg",
+                "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV10concurrentAA0C10ConcurrentVvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "total",
+            "printedName": "total",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastTotal",
+                "printedName": "BVMessagingSDK.BroadcastTotal",
+                "usr": "s:14BVMessagingSDK14BroadcastTotalV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV5totalAA0C5TotalVvp",
+            "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV5totalAA0C5TotalVvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BroadcastTotal",
+                    "printedName": "BVMessagingSDK.BroadcastTotal",
+                    "usr": "s:14BVMessagingSDK14BroadcastTotalV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV5totalAA0C5TotalVvg",
+                "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV5totalAA0C5TotalVvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastViewerMetrics",
+                "printedName": "BVMessagingSDK.BroadcastViewerMetrics",
+                "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14BVMessagingSDK22BroadcastViewerMetricsV",
+        "mangledName": "$s14BVMessagingSDK22BroadcastViewerMetricsV",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BroadcastConcurrent",
+        "printedName": "BroadcastConcurrent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK19BroadcastConcurrentV5countSivp",
+            "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV5countSivp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK19BroadcastConcurrentV5countSivg",
+                "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV5countSivg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK19BroadcastConcurrentV9updatedAtSSSgvp",
+            "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV9updatedAtSSSgvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK19BroadcastConcurrentV9updatedAtSSSgvg",
+                "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV9updatedAtSSSgvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastConcurrent",
+                "printedName": "BVMessagingSDK.BroadcastConcurrent",
+                "usr": "s:14BVMessagingSDK19BroadcastConcurrentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVMessagingSDK19BroadcastConcurrentV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK19BroadcastConcurrentV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14BVMessagingSDK19BroadcastConcurrentV",
+        "mangledName": "$s14BVMessagingSDK19BroadcastConcurrentV",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BroadcastTotal",
+        "printedName": "BroadcastTotal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK14BroadcastTotalV5countSivp",
+            "mangledName": "$s14BVMessagingSDK14BroadcastTotalV5countSivp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK14BroadcastTotalV5countSivg",
+                "mangledName": "$s14BVMessagingSDK14BroadcastTotalV5countSivg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK14BroadcastTotalV9updatedAtSSSgvp",
+            "mangledName": "$s14BVMessagingSDK14BroadcastTotalV9updatedAtSSSgvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK14BroadcastTotalV9updatedAtSSSgvg",
+                "mangledName": "$s14BVMessagingSDK14BroadcastTotalV9updatedAtSSSgvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BroadcastTotal",
+                "printedName": "BVMessagingSDK.BroadcastTotal",
+                "usr": "s:14BVMessagingSDK14BroadcastTotalV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14BVMessagingSDK14BroadcastTotalV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14BVMessagingSDK14BroadcastTotalV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14BVMessagingSDK14BroadcastTotalV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14BVMessagingSDK14BroadcastTotalV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BVMessagingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14BVMessagingSDK14BroadcastTotalV",
+        "mangledName": "$s14BVMessagingSDK14BroadcastTotalV",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BVMessagingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "InteractionMessageCustomCounterUpdate",
         "printedName": "InteractionMessageCustomCounterUpdate",
         "children": [
@@ -4736,6 +5624,50 @@
                 "declKind": "Accessor",
                 "usr": "s:14BVMessagingSDK13CustomCounterV9updatedAtSSSgvg",
                 "mangledName": "$s14BVMessagingSDK13CustomCounterV9updatedAtSSSgvg",
+                "moduleName": "BVMessagingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disabled",
+            "printedName": "disabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14BVMessagingSDK13CustomCounterV8disabledSbvp",
+            "mangledName": "$s14BVMessagingSDK13CustomCounterV8disabledSbvp",
+            "moduleName": "BVMessagingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14BVMessagingSDK13CustomCounterV8disabledSbvg",
+                "mangledName": "$s14BVMessagingSDK13CustomCounterV8disabledSbvg",
                 "moduleName": "BVMessagingSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9346,6 +10278,13 @@
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
       "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 35,
+      "value": "\"INTERACTION_TYPE_BROADCAST_UPDATE\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
+      "kind": "StringLiteral",
       "offset": 226,
       "length": 23,
       "value": "\"INTERACTION_TYPE_TEXT\""
@@ -9442,6 +10381,13 @@
       "value": "\"INTERACTION_TYPE_ENTRANCE\""
     },
     {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
+      "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 35,
+      "value": "\"INTERACTION_TYPE_BROADCAST_UPDATE\""
+    },
+    {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Poll.swift",
       "kind": "IntegerLiteral",
       "offset": 512,
@@ -9514,35 +10460,35 @@
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
       "kind": "Array",
-      "offset": 2551,
+      "offset": 2511,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
       "kind": "IntegerLiteral",
-      "offset": 2648,
+      "offset": 2608,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
       "kind": "IntegerLiteral",
-      "offset": 2683,
+      "offset": 2643,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
       "kind": "IntegerLiteral",
-      "offset": 2854,
+      "offset": 2814,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
       "kind": "IntegerLiteral",
-      "offset": 2884,
+      "offset": 2844,
       "length": 1,
       "value": "3"
     },
@@ -9759,23 +10705,100 @@
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/ChatroomAPI.swift",
       "kind": "StringLiteral",
-      "offset": 2326,
+      "offset": 2378,
       "length": 58,
       "value": "\"https:\/\/api.one.blendvision.com\/bv\/chatroom\/v1\/chatrooms\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/ChatroomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 18139,
+      "offset": 9597,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/ChatroomAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9621,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/ChatroomAPI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18840,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/ChatroomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 25002,
+      "offset": 25703,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 397,
+      "length": 19,
+      "value": "\"broadcast_message\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 397,
+      "length": 19,
+      "value": "\"broadcast_message\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 33,
+      "value": "\"BVMessagingSDK.InteractionMessageBroadcastUpdate\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 16,
+      "value": "\"viewer_metrics\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1127,
+      "length": 16,
+      "value": "\"viewer_metrics\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1695,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
+      "kind": "StringLiteral",
+      "offset": 1695,
+      "length": 12,
+      "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
@@ -9801,28 +10824,28 @@
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 1281,
+      "offset": 1321,
       "length": 16,
       "value": "\"version_number\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 1323,
+      "offset": 1363,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 1281,
+      "offset": 1321,
       "length": 16,
       "value": "\"version_number\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 1323,
+      "offset": 1363,
       "length": 12,
       "value": "\"updated_at\""
     },
@@ -9965,6 +10988,20 @@
       "offset": 1803,
       "length": 12,
       "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Message.swift",
+      "kind": "IntegerLiteral",
+      "offset": 865,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Message.swift",
+      "kind": "BooleanLiteral",
+      "offset": 888,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
@@ -10437,309 +11474,316 @@
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessageBatcher\/MessageBatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 151,
+      "length": 18,
+      "value": "\"[MessageBatcher]\""
+    },
+    {
+      "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessageBatcher\/MessageBatcher.swift",
       "kind": "Dictionary",
-      "offset": 257,
+      "offset": 232,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessageBatcher\/MessageBatcher.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1302,
       "length": 7,
       "value": "\"muted\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1308,
+      "offset": 1332,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1367,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1377,
+      "offset": 1401,
       "length": 15,
       "value": "\"blocked_users\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1448,
       "length": 17,
       "value": "\"pinned_messages\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1493,
       "length": 13,
       "value": "\"viewer_info\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1538,
       "length": 17,
       "value": "\"custom_counters\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
+      "offset": 1581,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1619,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1302,
       "length": 7,
       "value": "\"muted\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1308,
+      "offset": 1332,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1367,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1377,
+      "offset": 1401,
       "length": 15,
       "value": "\"blocked_users\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1448,
       "length": 17,
       "value": "\"pinned_messages\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1493,
       "length": 13,
       "value": "\"viewer_info\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1538,
       "length": 17,
       "value": "\"custom_counters\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
+      "offset": 1581,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1619,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2126,
+      "offset": 2150,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2164,
+      "offset": 2188,
       "length": 13,
       "value": "\"custom_name\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2226,
+      "offset": 2250,
       "length": 14,
       "value": "\"action_taker\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2126,
+      "offset": 2150,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2164,
+      "offset": 2188,
       "length": 13,
       "value": "\"custom_name\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2226,
+      "offset": 2250,
       "length": 14,
       "value": "\"action_taker\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2611,
+      "offset": 2635,
       "length": 13,
       "value": "\"votes_count\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2676,
       "length": 14,
       "value": "\"multi_choice\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
+      "offset": 2716,
       "length": 12,
       "value": "\"started_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2728,
+      "offset": 2752,
       "length": 10,
       "value": "\"ended_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2611,
+      "offset": 2635,
       "length": 13,
       "value": "\"votes_count\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2676,
       "length": 14,
       "value": "\"multi_choice\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
+      "offset": 2716,
       "length": 12,
       "value": "\"started_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2728,
+      "offset": 2752,
       "length": 10,
       "value": "\"ended_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3055,
       "length": 13,
       "value": "\"votes_count\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3055,
       "length": 13,
       "value": "\"votes_count\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3311,
+      "offset": 3501,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3530,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3376,
+      "offset": 3566,
       "length": 13,
       "value": "\"received_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3607,
       "length": 14,
       "value": "\"published_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3311,
+      "offset": 3501,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3530,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3376,
+      "offset": 3566,
       "length": 13,
       "value": "\"received_at\""
     },
     {
       "filePath": "\/Users\/bingkuo\/builds\/yfzwxhUAY\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3417,
+      "offset": 3607,
       "length": 14,
       "value": "\"published_at\""
     }
