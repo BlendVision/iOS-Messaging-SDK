@@ -46,6 +46,7 @@ public enum InteractionType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case custom
   case customCounterUpdate
   case entrance
+  case broadcastUpdate
   public init?(rawValue: Swift.String)
   public typealias AllCases = [BVMessagingSDK.InteractionType]
   public typealias RawValue = Swift.String
@@ -102,9 +103,6 @@ public protocol ChatroomEventListener : AnyObject {
     get
   }
   public var info: BVMessagingSDK.ChatroomInfo {
-    get
-  }
-  public var messages: [BVMessagingSDK.InteractionMessage] {
     get
   }
   @objc deinit
@@ -176,6 +174,35 @@ extension BVMessagingSDK.Chatroom {
   public func info() async throws -> BVMessagingSDK.ChatroomInfo
   #endif
 }
+@_hasMissingDesignatedInitializers public class InteractionMessageBroadcastUpdate : BVMessagingSDK.InteractionMessage {
+  final public let broadcastMessage: BVMessagingSDK.BroadcastMessage
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct BroadcastMessage : Swift.Codable {
+  public let viewerMetrics: BVMessagingSDK.BroadcastViewerMetrics
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BroadcastViewerMetrics : Swift.Codable {
+  public let concurrent: BVMessagingSDK.BroadcastConcurrent
+  public let total: BVMessagingSDK.BroadcastTotal
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BroadcastConcurrent : Swift.Codable {
+  public let count: Swift.Int
+  public let updatedAt: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BroadcastTotal : Swift.Codable {
+  public let count: Swift.Int
+  public let updatedAt: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class InteractionMessageCustomCounterUpdate : BVMessagingSDK.InteractionMessage {
   final public let customCounter: BVMessagingSDK.CustomCounter
   required public init(from decoder: any Swift.Decoder) throws
@@ -187,6 +214,7 @@ public struct CustomCounter : Swift.Codable {
   public let value: Swift.Int
   public let versionNumber: Swift.String
   public let updatedAt: Swift.String?
+  public let disabled: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -200,6 +228,9 @@ extension BVMessagingSDK.Chatroom {
   public func remove(listener: any BVMessagingSDK.ChatroomEventListener)
 }
 extension BVMessagingSDK.Chatroom {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getMessage(beforeAt: Foundation.Date? = nil, afterAt: Foundation.Date? = nil, limit: Swift.Int? = 10, fromOldest: Swift.Bool = false) async throws -> [BVMessagingSDK.InteractionMessage]
+  #endif
   public func sendMessage(text: Swift.String) throws -> BVMessagingSDK.InteractionMessageText
   #if compiler(>=5.3) && $AsyncAwait
   public func pinMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
