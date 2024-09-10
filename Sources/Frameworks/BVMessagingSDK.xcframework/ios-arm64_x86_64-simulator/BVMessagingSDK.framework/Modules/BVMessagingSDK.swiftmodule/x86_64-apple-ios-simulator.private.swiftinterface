@@ -239,10 +239,6 @@ extension BVMessagingSDK.Chatroom {
   public func unpinMessage(id messageID: Swift.String) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  @available(*, deprecated, message: "This will be removed in the next version; please migrate to deleteMessage(with:).")
-  public func deleteMessage(id messageID: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func deleteMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
   #endif
 }
