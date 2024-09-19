@@ -106,9 +106,6 @@ public protocol ChatroomEventListener : AnyObject {
     get
   }
   @objc deinit
-  #if compiler(>=5.3) && $AsyncAwait
-  public func reconnect() async throws
-  #endif
 }
 @_hasMissingDesignatedInitializers public class InteractionMessageEntrance : BVMessagingSDK.InteractionMessage {
   final public let entranceMessage: BVMessagingSDK.ChatroomUser
@@ -344,11 +341,17 @@ public enum ChatroomError : Swift.Error {
   case customCounterKeyNotFound(key: Swift.String)
   case refreshTokenNotFound
 }
+extension BVMessagingSDK.ChatroomError : Swift.Equatable {
+  public static func == (lhs: BVMessagingSDK.ChatroomError, rhs: BVMessagingSDK.ChatroomError) -> Swift.Bool
+}
 extension BVMessagingSDK.Chatroom {
   #if compiler(>=5.3) && $AsyncAwait
   public func connect() async throws
   #endif
   public func disconnect()
+  #if compiler(>=5.3) && $AsyncAwait
+  public func reconnect() async throws
+  #endif
 }
 public struct ChatroomInfo : Swift.Codable {
   public let identifier: Swift.String
