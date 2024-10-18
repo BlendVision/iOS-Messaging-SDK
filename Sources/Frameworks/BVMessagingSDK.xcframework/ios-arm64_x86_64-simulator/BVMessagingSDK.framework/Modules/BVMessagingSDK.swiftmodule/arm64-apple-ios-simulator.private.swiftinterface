@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BVMessagingSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import BVMessagingSDK
 import Foundation
 import Swift
@@ -50,7 +51,7 @@ public enum InteractionType : Swift.String, Swift.Codable, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [BVMessagingSDK.InteractionType]
   public typealias RawValue = Swift.String
-  public static var allCases: [BVMessagingSDK.InteractionType] {
+  nonisolated public static var allCases: [BVMessagingSDK.InteractionType] {
     get
   }
   public var rawValue: Swift.String {
@@ -69,12 +70,8 @@ public struct DeleteTextMessage : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func mute() async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unmute() async throws
-  #endif
 }
 @_hasMissingDesignatedInitializers public class InteractionMessageText : BVMessagingSDK.InteractionMessage {
   final public let textMessage: BVMessagingSDK.TextMessage?
@@ -127,15 +124,11 @@ public enum MessagingError : Swift.Error {
 @_hasMissingDesignatedInitializers public class MessagingManager {
   public static let shared: BVMessagingSDK.MessagingManager
   public func setup(with config: BVMessagingSDK.MessagingConfig)
-  #if compiler(>=5.3) && $AsyncAwait
   public func chatroom(with token: Swift.String, refreshToken: Swift.String?) async throws -> BVMessagingSDK.Chatroom
-  #endif
   @objc deinit
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func refreshToken() async throws
-  #endif
 }
 @_hasMissingDesignatedInitializers public class InteractionMessageViewerInfo : BVMessagingSDK.InteractionMessage {
   final public let viewerInfo: BVMessagingSDK.ViewerInfo?
@@ -167,9 +160,7 @@ public enum ChatroomAction : Swift.String {
   }
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func info() async throws -> BVMessagingSDK.ChatroomInfo
-  #endif
 }
 @_hasMissingDesignatedInitializers public class InteractionMessageBroadcastUpdate : BVMessagingSDK.InteractionMessage {
   final public let broadcastMessage: BVMessagingSDK.BroadcastMessage
@@ -216,28 +207,18 @@ public struct CustomCounter : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func updateViewerInfo(enabled: Swift.Bool) async throws
-  #endif
 }
 extension BVMessagingSDK.Chatroom {
   public func add(listener: any BVMessagingSDK.ChatroomEventListener)
   public func remove(listener: any BVMessagingSDK.ChatroomEventListener)
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func getMessage(beforeAt: Foundation.Date? = nil, afterAt: Foundation.Date? = nil, limit: Swift.Int? = 10, fromOldest: Swift.Bool = false) async throws -> [BVMessagingSDK.InteractionMessage]
-  #endif
   public func sendMessage(text: Swift.String) throws -> BVMessagingSDK.InteractionMessageText
-  #if compiler(>=5.3) && $AsyncAwait
   public func pinMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unpinMessage(id messageID: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func deleteMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
-  #endif
 }
 public struct ChatroomUser : Swift.Codable, Swift.Equatable {
   public let id: Swift.String
@@ -275,15 +256,9 @@ public enum ConnectingState : Swift.Int {
   }
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func blockUser(id userID: Swift.String, deviceID: Swift.String, username: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unblockUser(id userID: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func updateUser(name: Swift.String) async throws
-  #endif
 }
 @_hasMissingDesignatedInitializers public class InteractionMessageCustom : BVMessagingSDK.InteractionMessage {
   final public let customMessage: BVMessagingSDK.CustomMessage
@@ -345,13 +320,9 @@ extension BVMessagingSDK.ChatroomError : Swift.Equatable {
   public static func == (lhs: BVMessagingSDK.ChatroomError, rhs: BVMessagingSDK.ChatroomError) -> Swift.Bool
 }
 extension BVMessagingSDK.Chatroom {
-  #if compiler(>=5.3) && $AsyncAwait
   public func connect() async throws
-  #endif
   public func disconnect()
-  #if compiler(>=5.3) && $AsyncAwait
   public func reconnect() async throws
-  #endif
 }
 public struct ChatroomInfo : Swift.Codable {
   public let identifier: Swift.String

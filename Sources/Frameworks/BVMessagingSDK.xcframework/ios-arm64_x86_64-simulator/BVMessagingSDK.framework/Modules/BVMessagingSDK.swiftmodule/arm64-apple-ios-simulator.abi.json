@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BVMessagingSDK",
+    "printedName": "BVMessagingSDK",
     "children": [
       {
         "kind": "Import",
@@ -316,6 +316,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -491,6 +505,20 @@
           "BVMessagingSDK.InteractionMessage"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -1192,6 +1220,9 @@
             "moduleName": "BVMessagingSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1234,6 +1265,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1477,6 +1522,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1608,6 +1667,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -1857,6 +1930,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -1992,6 +2079,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -2361,6 +2462,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3070,7 +3187,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3212,6 +3345,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3348,6 +3495,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3498,6 +3661,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3664,7 +3841,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3829,6 +4022,20 @@
           "BVMessagingSDK.InteractionMessage"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4109,6 +4316,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -4194,6 +4415,20 @@
           "BVMessagingSDK.InteractionMessage"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4401,6 +4636,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4596,6 +4845,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -4726,6 +4989,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -4895,6 +5172,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5082,6 +5373,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -5267,6 +5572,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -5419,6 +5738,20 @@
           "BVMessagingSDK.InteractionMessage"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -5745,6 +6078,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -6385,6 +6732,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -6465,6 +6826,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -6699,6 +7074,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6905,6 +7294,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -7098,6 +7501,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -7267,6 +7684,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -7419,6 +7850,20 @@
           "BVMessagingSDK.InteractionMessage"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7630,6 +8075,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7886,6 +8345,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -8104,6 +8577,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -8586,6 +9073,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -9175,6 +9676,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -9510,6 +10025,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -9995,6 +10524,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -10090,102 +10633,11 @@
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 198,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 212,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 229,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 3,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 187,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 198,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 212,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 229,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Logger\/Logger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 3,
-      "value": "4"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBlock.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 20,
       "value": "\"block_unblock_user\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBlock.swift",
-      "kind": "StringLiteral",
-      "offset": 394,
-      "length": 20,
-      "value": "\"block_unblock_user\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBlock.swift",
-      "kind": "StringLiteral",
-      "offset": 207,
-      "length": 23,
-      "value": "\"BVMessagingSDK.InteractionMessageBlock\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
-      "kind": "StringLiteral",
-      "offset": 350,
-      "length": 17,
-      "value": "\"next_page_token\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
@@ -10221,139 +10673,6 @@
       "offset": 881,
       "length": 12,
       "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
-      "kind": "StringLiteral",
-      "offset": 764,
-      "length": 9,
-      "value": "\"default\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
-      "kind": "StringLiteral",
-      "offset": 802,
-      "length": 15,
-      "value": "\"pattern_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
-      "kind": "StringLiteral",
-      "offset": 843,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomDictionaries.swift",
-      "kind": "StringLiteral",
-      "offset": 881,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 226,
-      "length": 23,
-      "value": "\"INTERACTION_TYPE_TEXT\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 266,
-      "length": 23,
-      "value": "\"INTERACTION_TYPE_MUTE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 308,
-      "length": 25,
-      "value": "\"INTERACTION_TYPE_UNMUTE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 356,
-      "length": 30,
-      "value": "\"INTERACTION_TYPE_PIN_MESSAGE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 411,
-      "length": 32,
-      "value": "\"INTERACTION_TYPE_UNPIN_MESSAGE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 465,
-      "length": 29,
-      "value": "\"INTERACTION_TYPE_BLOCK_USER\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 518,
-      "length": 31,
-      "value": "\"INTERACTION_TYPE_UNBLOCK_USER\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 575,
-      "length": 33,
-      "value": "\"INTERACTION_TYPE_DELETE_MESSAGE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 638,
-      "length": 38,
-      "value": "\"INTERACTION_TYPE_VIEWER_INFO_ENABLED\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 707,
-      "length": 39,
-      "value": "\"INTERACTION_TYPE_VIEWER_INFO_DISABLED\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 775,
-      "length": 37,
-      "value": "\"INTERACTION_TYPE_VIEWER_INFO_UPDATE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 831,
-      "length": 25,
-      "value": "\"INTERACTION_TYPE_CUSTOM\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 888,
-      "length": 40,
-      "value": "\"INTERACTION_TYPE_CUSTOM_COUNTER_UPDATE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 949,
-      "length": 27,
-      "value": "\"INTERACTION_TYPE_ENTRANCE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
-      "kind": "StringLiteral",
-      "offset": 1004,
-      "length": 35,
-      "value": "\"INTERACTION_TYPE_BROADCAST_UPDATE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionType.swift",
@@ -10475,39 +10794,11 @@
       "value": "\"delete_message\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageDeleteMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 412,
-      "length": 16,
-      "value": "\"delete_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageDeleteMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 31,
-      "value": "\"BVMessagingSDK.InteractionMessageDeleteMessage\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageText.swift",
       "kind": "StringLiteral",
       "offset": 378,
       "length": 14,
       "value": "\"text_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageText.swift",
-      "kind": "StringLiteral",
-      "offset": 378,
-      "length": 14,
-      "value": "\"text_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageText.swift",
-      "kind": "StringLiteral",
-      "offset": 190,
-      "length": 22,
-      "value": "\"BVMessagingSDK.InteractionMessageText\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MulticastDelegate\/MulticastDelegate.swift",
@@ -10601,27 +10892,6 @@
       "value": "\"entrance_message\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageEntrance.swift",
-      "kind": "StringLiteral",
-      "offset": 398,
-      "length": 18,
-      "value": "\"entrance_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageEntrance.swift",
-      "kind": "StringLiteral",
-      "offset": 199,
-      "length": 26,
-      "value": "\"BVMessagingSDK.InteractionMessageEntrance\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomToken.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 12,
-      "value": "\"expires_in\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomToken.swift",
       "kind": "StringLiteral",
       "offset": 300,
@@ -10659,41 +10929,6 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
       "kind": "StringLiteral",
-      "offset": 411,
-      "length": 13,
-      "value": "\"viewer_info\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 244,
-      "length": 28,
-      "value": "\"BVMessagingSDK.InteractionMessageViewerInfo\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1325,
-      "length": 9,
-      "value": "\"enabled\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1383,
-      "length": 16,
-      "value": "\"version_number\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1425,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
-      "kind": "StringLiteral",
       "offset": 1325,
       "length": 9,
       "value": "\"enabled\""
@@ -10729,20 +10964,6 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "StringLiteral",
-      "offset": 248,
-      "length": 15,
-      "value": "\"ACTION_ACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 284,
-      "length": 17,
-      "value": "\"ACTION_INACTIVE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
       "offset": 351,
       "length": 13,
       "value": "\"ROLE_VIEWER\""
@@ -10753,41 +10974,6 @@
       "offset": 382,
       "length": 12,
       "value": "\"ROLE_ADMIN\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 351,
-      "length": 13,
-      "value": "\"ROLE_VIEWER\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 382,
-      "length": 12,
-      "value": "\"ROLE_ADMIN\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 449,
-      "length": 28,
-      "value": "\"REPORT_TYPE_CHAT_HISTORIES\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 503,
-      "length": 28,
-      "value": "\"REPORT_TYPE_POLL_SUMMARIES\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 553,
-      "length": 24,
-      "value": "\"REPORT_TYPE_POLL_VOTES\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
@@ -10862,37 +11048,9 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 397,
-      "length": 19,
-      "value": "\"broadcast_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 213,
-      "length": 33,
-      "value": "\"BVMessagingSDK.InteractionMessageBroadcastUpdate\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
-      "kind": "StringLiteral",
       "offset": 1127,
       "length": 16,
       "value": "\"viewer_metrics\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 1127,
-      "length": 16,
-      "value": "\"viewer_metrics\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 1483,
-      "length": 12,
-      "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
@@ -10909,46 +11067,11 @@
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageBroadcastUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 1695,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 16,
       "value": "\"custom_counter\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 411,
-      "length": 16,
-      "value": "\"custom_counter\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 207,
-      "length": 37,
-      "value": "\"BVMessagingSDK.InteractionMessageCustomCounterUpdate\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 1321,
-      "length": 16,
-      "value": "\"version_number\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
-      "kind": "StringLiteral",
-      "offset": 1363,
-      "length": 12,
-      "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustomCounterUpdate.swift",
@@ -10972,20 +11095,6 @@
       "value": "\"sent_at\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/TemporaryCustomMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 790,
-      "length": 9,
-      "value": "\"sent_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 275,
-      "length": 15,
-      "value": "\"sticker_packs\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
       "kind": "StringLiteral",
       "offset": 275,
@@ -10996,20 +11105,6 @@
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
       "kind": "StringLiteral",
       "offset": 540,
-      "length": 14,
-      "value": "\"sticker_pack\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 540,
-      "length": 14,
-      "value": "\"sticker_pack\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 749,
       "length": 14,
       "value": "\"sticker_pack\""
     },
@@ -11051,58 +11146,9 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
       "kind": "StringLiteral",
-      "offset": 1068,
-      "length": 9,
-      "value": "\"default\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1123,
-      "length": 13,
-      "value": "\"cover_image\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1162,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1200,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
       "offset": 1420,
       "length": 15,
       "value": "\"size_in_bytes\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1420,
-      "length": 15,
-      "value": "\"size_in_bytes\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1765,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
-      "kind": "StringLiteral",
-      "offset": 1803,
-      "length": 12,
-      "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/StickerPack.swift",
@@ -11168,83 +11214,6 @@
       "value": "\"blocked\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
-      "kind": "StringLiteral",
-      "offset": 789,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
-      "kind": "StringLiteral",
-      "offset": 814,
-      "length": 13,
-      "value": "\"custom_name\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
-      "kind": "StringLiteral",
-      "offset": 852,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
-      "kind": "StringLiteral",
-      "offset": 887,
-      "length": 10,
-      "value": "\"is_admin\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
-      "kind": "StringLiteral",
-      "offset": 923,
-      "length": 9,
-      "value": "\"blocked\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 216,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 227,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 247,
-      "length": 9,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 216,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 227,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 247,
-      "length": 9,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ConnectingState.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
@@ -11275,51 +11244,9 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
       "kind": "StringLiteral",
-      "offset": 347,
-      "length": 6,
-      "value": "\"user\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
       "offset": 590,
       "length": 11,
       "value": "\"client_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 590,
-      "length": 11,
-      "value": "\"client_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 826,
-      "length": 10,
-      "value": "\"is_admin\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 863,
-      "length": 13,
-      "value": "\"customer_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 939,
-      "length": 13,
-      "value": "\"custom_name\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomConfig.swift",
@@ -11359,41 +11286,6 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
       "kind": "StringLiteral",
-      "offset": 358,
-      "length": 17,
-      "value": "\"next_page_token\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 637,
-      "length": 13,
-      "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 678,
-      "length": 14,
-      "value": "\"multi_choice\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 718,
-      "length": 12,
-      "value": "\"started_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 754,
-      "length": 10,
-      "value": "\"ended_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
       "offset": 637,
       "length": 13,
       "value": "\"votes_count\""
@@ -11425,27 +11317,6 @@
       "offset": 1077,
       "length": 13,
       "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1077,
-      "length": 13,
-      "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1583,
-      "length": 24,
-      "value": "\"POLL_TYPE_MULTI_CHOICE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1632,
-      "length": 25,
-      "value": "\"POLL_TYPE_SINGLE_CHOICE\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
@@ -11483,53 +11354,11 @@
       "value": "\"ACTION_ARCHIVE\""
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1704,
-      "length": 14,
-      "value": "\"ACTION_START\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1736,
-      "length": 14,
-      "value": "\"ACTION_CLOSE\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/Poll.swift",
-      "kind": "StringLiteral",
-      "offset": 1770,
-      "length": 16,
-      "value": "\"ACTION_ARCHIVE\""
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustom.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 16,
       "value": "\"custom_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustom.swift",
-      "kind": "StringLiteral",
-      "offset": 402,
-      "length": 16,
-      "value": "\"custom_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustom.swift",
-      "kind": "StringLiteral",
-      "offset": 193,
-      "length": 24,
-      "value": "\"BVMessagingSDK.InteractionMessageCustom\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustom.swift",
-      "kind": "StringLiteral",
-      "offset": 3530,
-      "length": 6,
-      "value": "\"incr\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageCustom.swift",
@@ -11548,44 +11377,9 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
       "kind": "StringLiteral",
-      "offset": 397,
-      "length": 19,
-      "value": "\"pin_unpin_message\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 21,
-      "value": "\"BVMessagingSDK.InteractionMessagePin\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
-      "kind": "StringLiteral",
       "offset": 1163,
       "length": 14,
       "value": "\"action_taker\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
-      "kind": "StringLiteral",
-      "offset": 1163,
-      "length": 14,
-      "value": "\"action_taker\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
-      "kind": "StringLiteral",
-      "offset": 1768,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
-      "kind": "StringLiteral",
-      "offset": 1806,
-      "length": 13,
-      "value": "\"custom_name\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessagePin.swift",
@@ -11695,90 +11489,6 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 7,
-      "value": "\"muted\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1332,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1367,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1401,
-      "length": 15,
-      "value": "\"blocked_users\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 17,
-      "value": "\"pinned_messages\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1493,
-      "length": 13,
-      "value": "\"viewer_info\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1538,
-      "length": 17,
-      "value": "\"custom_counters\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1581,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1619,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2150,
-      "length": 11,
-      "value": "\"device_id\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2188,
-      "length": 13,
-      "value": "\"custom_name\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2250,
-      "length": 14,
-      "value": "\"action_taker\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
       "offset": 2150,
       "length": 11,
       "value": "\"device_id\""
@@ -11828,72 +11538,9 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2635,
-      "length": 13,
-      "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2676,
-      "length": 14,
-      "value": "\"multi_choice\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2716,
-      "length": 12,
-      "value": "\"started_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2752,
-      "length": 10,
-      "value": "\"ended_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
       "offset": 3055,
       "length": 13,
       "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/Response\/ChatroomInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3055,
-      "length": 13,
-      "value": "\"votes_count\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3501,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3530,
-      "length": 9,
-      "value": "\"sent_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3566,
-      "length": 13,
-      "value": "\"received_at\""
-    },
-    {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 3607,
-      "length": 14,
-      "value": "\"published_at\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessage.swift",
