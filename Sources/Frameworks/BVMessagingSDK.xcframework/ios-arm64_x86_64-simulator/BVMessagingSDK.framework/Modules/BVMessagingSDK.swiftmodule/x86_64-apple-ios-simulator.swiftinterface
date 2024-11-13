@@ -214,7 +214,7 @@ extension BVMessagingSDK.Chatroom {
   public func remove(listener: any BVMessagingSDK.ChatroomEventListener)
 }
 extension BVMessagingSDK.Chatroom {
-  public func getMessage(beforeAt: Foundation.Date? = nil, afterAt: Foundation.Date? = nil, limit: Swift.Int? = 10, fromOldest: Swift.Bool = false) async throws -> [BVMessagingSDK.InteractionMessage]
+  public func getMessage(beforeAt: Foundation.Date? = nil, afterAt: Foundation.Date? = nil, limit: Swift.Int? = 10, fromOldest: Swift.Bool = false, types: [BVMessagingSDK.InteractionType] = []) async throws -> [BVMessagingSDK.InteractionMessage]
   public func sendMessage(text: Swift.String) throws -> BVMessagingSDK.InteractionMessageText
   public func pinMessage(with message: BVMessagingSDK.InteractionMessageText) async throws
   public func unpinMessage(id messageID: Swift.String) async throws

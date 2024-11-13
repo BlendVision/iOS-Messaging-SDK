@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/BVMessagingSDK.framework/BVMessagingSDK</key>
 		<data>
-		AfTP18umU6iy0PUbQ6CDlSZbUlA=
+		xP7/C+q102COuHaDpbLjY9JLzE8=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Headers/BVMessagingSDK-Swift.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Info.plist</key>
 		<data>
-		z5ePgOsHZaHeaDdPjXO1X1x4orY=
+		PWkT2I2YPV3VicHkwMySPhG++U8=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		g+N6/xdOGFDkzI7xMghUxC6pR2c=
+		6rMDcQWt+24nlpsYBUXv5KuzqSE=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FKr5arvERZTD2lDLXRZctV9KK7U=
+		OhyaIqlItEPbuibbAKSZotPaPvM=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		TQdt8kMHW+suIdO/DkFH9X0BIkw=
+		KEQSjXuvCyZoHgdPllZ9JW215sI=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FKr5arvERZTD2lDLXRZctV9KK7U=
+		OhyaIqlItEPbuibbAKSZotPaPvM=
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>ios-arm64/BVMessagingSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		7mfkzZW7H8P2570tQgUTHMCIurY=
+		0HKt3qNMKqx/rfQ8VtXFIaZjBqQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/BVMessagingSDK</key>
 		<data>
-		e5BQVRgdK+duNxHcU5M79n3QTMI=
+		M6+2HBqMaeqcGnRqyjEUzaJNvw0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Headers/BVMessagingSDK-Swift.h</key>
 		<data>
@@ -62,39 +62,39 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Info.plist</key>
 		<data>
-		acKEjU+qaG7h6ANDYhubam5fQh0=
+		PZsTsZ18lPD43TaKg+EkzYpxvYs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+N6/xdOGFDkzI7xMghUxC6pR2c=
+		6rMDcQWt+24nlpsYBUXv5KuzqSE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+		4OCFrC57UbV87qtJ9Xx3csmJdic=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LdlzB2PBxQrqsY7fu+kDMNORjQY=
+		ecBRMGt/mbbmMFGGFCZuB6O5alI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+		4OCFrC57UbV87qtJ9Xx3csmJdic=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+N6/xdOGFDkzI7xMghUxC6pR2c=
+		6rMDcQWt+24nlpsYBUXv5KuzqSE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FRz8gCApGDJUvhUfTk92jMw3iBw=
+		l1dJ4OIebwNL5VDDeEejHSSh+hk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		V0aKTm85iE/SEKcHxJqzGvhS/Y8=
+		lYnlK4x8xLlY2uFC9LDa3+CzAro=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FRz8gCApGDJUvhUfTk92jMw3iBw=
+		l1dJ4OIebwNL5VDDeEejHSSh+hk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		AmzOaGaUubfsVQahSYDzZ64a1zU=
+		Ie6VsUFCEo0fxa+oK71YHLhkcc8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AfTP18umU6iy0PUbQ6CDlSZbUlA=
+			xP7/C+q102COuHaDpbLjY9JLzE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			oQtMVaemAi6/Me/PiPFBb2yudbDLIm6JUQLJtDkak4A=
+			+EhRLjzQLpdsjKRaF2LDGeV7Z5cgnVIPOVIWkkK/3Hc=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Headers/BVMessagingSDK-Swift.h</key>
@@ -148,55 +148,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z5ePgOsHZaHeaDdPjXO1X1x4orY=
+			PWkT2I2YPV3VicHkwMySPhG++U8=
 			</data>
 			<key>hash2</key>
 			<data>
-			n9VdiO0nUecZVTQMzFXEJzXsOLVC+cBJ7eKDUxbFw8E=
+			V8hEPHXncvaWTD8Ixcw8XxFUBKi3vha8vOtCYEvHj6Q=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g+N6/xdOGFDkzI7xMghUxC6pR2c=
+			6rMDcQWt+24nlpsYBUXv5KuzqSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RcUc87fUKJMV9oZcwAqPGX2VMvcoEhKwgehRMgHoJVk=
+			075rGgJlO8izvg2sGSTKvjQQnaqJ4BvH5cE6Mbw+YQw=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FKr5arvERZTD2lDLXRZctV9KK7U=
+			OhyaIqlItEPbuibbAKSZotPaPvM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FH2iyWeTEX9YOHmQdf8bGuvORMU5f/ujntnmMuXefq0=
+			eU6cVLAzFA6WMJFkT7V1mS5Lym/OstoK1VQbLij30Jk=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TQdt8kMHW+suIdO/DkFH9X0BIkw=
+			KEQSjXuvCyZoHgdPllZ9JW215sI=
 			</data>
 			<key>hash2</key>
 			<data>
-			C9FpKRHMIH2Ynd5+NTfEzr/NW8oX5GHNbgnxagJbtHk=
+			WaOTudX5JUgyYUwfdkMIyR9tMKlNnGl68ycpn1wqFuo=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FKr5arvERZTD2lDLXRZctV9KK7U=
+			OhyaIqlItEPbuibbAKSZotPaPvM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FH2iyWeTEX9YOHmQdf8bGuvORMU5f/ujntnmMuXefq0=
+			eU6cVLAzFA6WMJFkT7V1mS5Lym/OstoK1VQbLij30Jk=
 			</data>
 		</dict>
 		<key>ios-arm64/BVMessagingSDK.framework/Modules/module.modulemap</key>
@@ -225,22 +225,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7mfkzZW7H8P2570tQgUTHMCIurY=
+			0HKt3qNMKqx/rfQ8VtXFIaZjBqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNtq1R/003RNWDk1vMbZ9ax4tleuxgLtioOOADgwrAc=
+			TOtHXNwH/VZ+dsrQLJ/eTHxMrAfNBVpVgD1WSlBj/QM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/BVMessagingSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e5BQVRgdK+duNxHcU5M79n3QTMI=
+			M6+2HBqMaeqcGnRqyjEUzaJNvw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			49byPDYel1U25DlkHs0CoXs1XKwdcxffC5ytqIrgADc=
+			MM7NpxQEc9E7MajZyzuqWRsfUJtT0Vm2zye4BgqQZEU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Headers/BVMessagingSDK-Swift.h</key>
@@ -269,99 +269,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			acKEjU+qaG7h6ANDYhubam5fQh0=
+			PZsTsZ18lPD43TaKg+EkzYpxvYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			V4KVEGaKMS5GEfVV9HQG5b4inOOMzS61QsX1CK4A3Zk=
+			ssziSnpSVN622dn0/Nh3z4cwLshIAw5c79QB5EYbHlE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g+N6/xdOGFDkzI7xMghUxC6pR2c=
+			6rMDcQWt+24nlpsYBUXv5KuzqSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RcUc87fUKJMV9oZcwAqPGX2VMvcoEhKwgehRMgHoJVk=
+			075rGgJlO8izvg2sGSTKvjQQnaqJ4BvH5cE6Mbw+YQw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+			4OCFrC57UbV87qtJ9Xx3csmJdic=
 			</data>
 			<key>hash2</key>
 			<data>
-			N+ZkAwjz+mVOA03dt868AF3VSyW+mD1/ndcnwq4HaFk=
+			KHLiViMKx7Xv73HQIVvASSOoSm2dNQfsA2TAiJvAgaE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LdlzB2PBxQrqsY7fu+kDMNORjQY=
+			ecBRMGt/mbbmMFGGFCZuB6O5alI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oCGzdzM3zMYKszOvflFoQvKYmIQlgX/EMyKjVRywm4o=
+			1b+0nTjayNu0hGGyCz1IHaiDY7W6zYI7xs1H55L1oxk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+			4OCFrC57UbV87qtJ9Xx3csmJdic=
 			</data>
 			<key>hash2</key>
 			<data>
-			N+ZkAwjz+mVOA03dt868AF3VSyW+mD1/ndcnwq4HaFk=
+			KHLiViMKx7Xv73HQIVvASSOoSm2dNQfsA2TAiJvAgaE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g+N6/xdOGFDkzI7xMghUxC6pR2c=
+			6rMDcQWt+24nlpsYBUXv5KuzqSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RcUc87fUKJMV9oZcwAqPGX2VMvcoEhKwgehRMgHoJVk=
+			075rGgJlO8izvg2sGSTKvjQQnaqJ4BvH5cE6Mbw+YQw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FRz8gCApGDJUvhUfTk92jMw3iBw=
+			l1dJ4OIebwNL5VDDeEejHSSh+hk=
 			</data>
 			<key>hash2</key>
 			<data>
-			T0Z1sH5DmdqHWrgwWw2GQgt+yV1/yPhcDNRUM0rrJJc=
+			bfUzuutCLEIa8l2lXy3DnOZNylNQsvTE6qL63z4tpy0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V0aKTm85iE/SEKcHxJqzGvhS/Y8=
+			lYnlK4x8xLlY2uFC9LDa3+CzAro=
 			</data>
 			<key>hash2</key>
 			<data>
-			059aX703Kns14jaK+vonBhQg8DPfLu/EoePffK/kyV8=
+			oV4e2fuil+ESKAofR+FiNLafgkcAGfr9Sq2aKOdoEdU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FRz8gCApGDJUvhUfTk92jMw3iBw=
+			l1dJ4OIebwNL5VDDeEejHSSh+hk=
 			</data>
 			<key>hash2</key>
 			<data>
-			T0Z1sH5DmdqHWrgwWw2GQgt+yV1/yPhcDNRUM0rrJJc=
+			bfUzuutCLEIa8l2lXy3DnOZNylNQsvTE6qL63z4tpy0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BVMessagingSDK.framework/Modules/module.modulemap</key>
@@ -390,11 +390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AmzOaGaUubfsVQahSYDzZ64a1zU=
+			Ie6VsUFCEo0fxa+oK71YHLhkcc8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QzDVRMFoS2IrvuPot6D+639RL2oJ+cb41Qo4vGmAeAY=
+			OjyEOaUbuMCXO3+tz36iB0MSfnqJYyudJ5b+KBtjres=
 			</data>
 		</dict>
 	</dict>

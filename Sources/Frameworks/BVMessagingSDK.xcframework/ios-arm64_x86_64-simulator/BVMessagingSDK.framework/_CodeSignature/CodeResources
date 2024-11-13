@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+N6/xdOGFDkzI7xMghUxC6pR2c=
+		6rMDcQWt+24nlpsYBUXv5KuzqSE=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+		4OCFrC57UbV87qtJ9Xx3csmJdic=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LdlzB2PBxQrqsY7fu+kDMNORjQY=
+		ecBRMGt/mbbmMFGGFCZuB6O5alI=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4FoAN96H7Y1l/N9kDLzJbbEsJ/Q=
+		4OCFrC57UbV87qtJ9Xx3csmJdic=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BG/j0U6gvUtqrrOEx8pH3ll0r9E=
+		2R98SYUvsdAbYttXFNEsb9bSY/Y=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+N6/xdOGFDkzI7xMghUxC6pR2c=
+		6rMDcQWt+24nlpsYBUXv5KuzqSE=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FRz8gCApGDJUvhUfTk92jMw3iBw=
+		l1dJ4OIebwNL5VDDeEejHSSh+hk=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		V0aKTm85iE/SEKcHxJqzGvhS/Y8=
+		lYnlK4x8xLlY2uFC9LDa3+CzAro=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FRz8gCApGDJUvhUfTk92jMw3iBw=
+		l1dJ4OIebwNL5VDDeEejHSSh+hk=
 		</data>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q+rvrbComjFtF3rJc9cvUWGxWYY=
+		51uH4Qy5A2ay1n/L/l+J3t46azg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RcUc87fUKJMV9oZcwAqPGX2VMvcoEhKwgehRMgHoJVk=
+			075rGgJlO8izvg2sGSTKvjQQnaqJ4BvH5cE6Mbw+YQw=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N+ZkAwjz+mVOA03dt868AF3VSyW+mD1/ndcnwq4HaFk=
+			KHLiViMKx7Xv73HQIVvASSOoSm2dNQfsA2TAiJvAgaE=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oCGzdzM3zMYKszOvflFoQvKYmIQlgX/EMyKjVRywm4o=
+			1b+0nTjayNu0hGGyCz1IHaiDY7W6zYI7xs1H55L1oxk=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N+ZkAwjz+mVOA03dt868AF3VSyW+mD1/ndcnwq4HaFk=
+			KHLiViMKx7Xv73HQIVvASSOoSm2dNQfsA2TAiJvAgaE=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K2VcELkumU3JUVhx5Ng3R9wU2iWODaFxkOpuUesw3sM=
+			rK0LDctAdQsqBIbSvpthO0FWj/ABesqYh2tGHToonJc=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RcUc87fUKJMV9oZcwAqPGX2VMvcoEhKwgehRMgHoJVk=
+			075rGgJlO8izvg2sGSTKvjQQnaqJ4BvH5cE6Mbw+YQw=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T0Z1sH5DmdqHWrgwWw2GQgt+yV1/yPhcDNRUM0rrJJc=
+			bfUzuutCLEIa8l2lXy3DnOZNylNQsvTE6qL63z4tpy0=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			059aX703Kns14jaK+vonBhQg8DPfLu/EoePffK/kyV8=
+			oV4e2fuil+ESKAofR+FiNLafgkcAGfr9Sq2aKOdoEdU=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T0Z1sH5DmdqHWrgwWw2GQgt+yV1/yPhcDNRUM0rrJJc=
+			bfUzuutCLEIa8l2lXy3DnOZNylNQsvTE6qL63z4tpy0=
 			</data>
 		</dict>
 		<key>Modules/BVMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			raS17DMSrwmrsUtTDsWY1nPCol0jgBxrMOGMhk0hD/g=
+			s8ZnCFb4WSSBGI5i/Dn4uxJHd3Tp5P0v9Qq1RP2/k7M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

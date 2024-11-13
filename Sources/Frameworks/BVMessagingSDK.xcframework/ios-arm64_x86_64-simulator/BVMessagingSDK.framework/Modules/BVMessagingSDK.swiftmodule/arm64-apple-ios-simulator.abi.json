@@ -2813,7 +2813,7 @@
           {
             "kind": "Function",
             "name": "getMessage",
-            "printedName": "getMessage(beforeAt:afterAt:limit:fromOldest:)",
+            "printedName": "getMessage(beforeAt:afterAt:limit:fromOldest:types:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2880,11 +2880,26 @@
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BVMessagingSDK.InteractionType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InteractionType",
+                    "printedName": "BVMessagingSDK.InteractionType",
+                    "usr": "s:14BVMessagingSDK15InteractionTypeO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldestSayAA011InteractionE0CG10Foundation4DateVSg_AOSiSgSbtYaKF",
-            "mangledName": "$s14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldestSayAA011InteractionE0CG10Foundation4DateVSg_AOSiSgSbtYaKF",
+            "usr": "s:14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldest5typesSayAA011InteractionE0CG10Foundation4DateVSg_APSiSgSbSayAA0M4TypeOGtYaKF",
+            "mangledName": "$s14BVMessagingSDK8ChatroomC10getMessage8beforeAt05afterG05limit10fromOldest5typesSayAA011InteractionE0CG10Foundation4DateVSg_APSiSgSbSayAA0M4TypeOGtYaKF",
             "moduleName": "BVMessagingSDK",
             "declAttributes": [
               "AccessControl",
@@ -10999,42 +11014,49 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "StringLiteral",
-      "offset": 2570,
+      "offset": 2596,
       "length": 12,
       "value": "\"Production\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "StringLiteral",
-      "offset": 2608,
+      "offset": 2634,
       "length": 58,
       "value": "\"https:\/\/api.one.blendvision.com\/bv\/chatroom\/v1\/chatrooms\""
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 10185,
+      "offset": 10321,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 10209,
+      "offset": 10345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
+      "kind": "Array",
+      "offset": 10379,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 19864,
+      "offset": 20045,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/API\/BVChatroomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 26868,
+      "offset": 27049,
       "length": 2,
       "value": "10"
     },
@@ -11167,16 +11189,23 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Message.swift",
       "kind": "IntegerLiteral",
-      "offset": 865,
+      "offset": 1037,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Message.swift",
       "kind": "BooleanLiteral",
-      "offset": 888,
+      "offset": 1060,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom+Message.swift",
+      "kind": "Array",
+      "offset": 1094,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/ChatroomUser.swift",
