@@ -111,7 +111,7 @@ public protocol ChatroomEventListener : AnyObject {
   @objc deinit
 }
 public struct MessagingConfig {
-  public init(logLevel: BVMessagingSDK.LoggerLevel, batchProcessingInterval: Foundation.TimeInterval = 2, batchSendInterval: Foundation.TimeInterval = 5)
+  public init(logLevel: BVMessagingSDK.LoggerLevel, batchProcessingInterval: Foundation.TimeInterval = 2, batchSendInterval: Foundation.TimeInterval = 5, maxReconnectCount: Swift.Int = 3)
 }
 public enum MessagingError : Swift.Error {
   case configMissing

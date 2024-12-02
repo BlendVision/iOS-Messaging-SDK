@@ -3463,7 +3463,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(logLevel:batchProcessingInterval:batchSendInterval:)",
+            "printedName": "init(logLevel:batchProcessingInterval:batchSendInterval:maxReconnectCount:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3490,11 +3490,18 @@
                 "printedName": "Swift.Double",
                 "hasDefaultArg": true,
                 "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14BVMessagingSDK15MessagingConfigV8logLevel23batchProcessingInterval0g4SendI0AcA06LoggerF0O_S2dtcfc",
-            "mangledName": "$s14BVMessagingSDK15MessagingConfigV8logLevel23batchProcessingInterval0g4SendI0AcA06LoggerF0O_S2dtcfc",
+            "usr": "s:14BVMessagingSDK15MessagingConfigV8logLevel23batchProcessingInterval0g4SendI017maxReconnectCountAcA06LoggerF0O_S2dSitcfc",
+            "mangledName": "$s14BVMessagingSDK15MessagingConfigV8logLevel23batchProcessingInterval0g4SendI017maxReconnectCountAcA06LoggerF0O_S2dSitcfc",
             "moduleName": "BVMessagingSDK",
             "declAttributes": [
               "AccessControl",
@@ -10893,13 +10900,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/Chatroom.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3338,
-      "length": 1,
-      "value": "3"
-    },
-    {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageEntrance.swift",
       "kind": "StringLiteral",
       "offset": 398,
@@ -10923,16 +10923,23 @@
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessagingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
+      "offset": 1277,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessagingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 1314,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MessagingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1342,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/jenkinsslave\/builds\/glrt-4bX\/0\/ssc-ios\/bv-messaging-sdk\/BVMessagingSDK\/BVMessagingSDK\/MQTT\/Models\/InteractionMessage\/InteractionMessageViewerInfo.swift",
